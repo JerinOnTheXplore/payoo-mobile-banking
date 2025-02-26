@@ -24,18 +24,18 @@
             <div class="flex items-center">
                 <div><img src="assets/Group.png" alt=""></div>
                 <div>
-                    <h3 class="text-2xl">$ <span id="main-balance">45000</span></h3>
-                    <p>Available Balance</p>
+                    <h3 class="text-4xl text-sky-800 font-bold animate-bounce">$ <span id="main-balance">45000</span></h3>
+                    <p class="text-cyan-900 text-lg font-extrabold animate-bounce">Available Balance</p>
                 </div>
             </div>
-            <div><pre class="text-base font-semibold text-slate-600">Log out</pre><i class="fa-solid fa-right-from-bracket"></i></div>
+            <div class="text-center text-cyan-900"><pre class="text-2xl font-semibold ">Log out</pre><i class="fa-solid  fa-right-from-bracket"></i></div>
          </div>
 
     </header>
     <main>
        <section class="mb-10">
-        <h1 class="text-3xl">🔥 Welcome to Payooo!</h1>
-        <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        <h1 class="text-3xl text-cyan-800 font-semibold">Welcome to Payooo!</h1>
+        <p class="text-base text-slate-700 font-medium">Experience hassle-free financial services with us. Enjoy low cashout charges for your convenience!</p>
        </section>
        <section class="grid grid-cols-3 gap-3">
         <div id="add-money-box" class="mx-auto items-center drop-shadow-lg p-4 rounded-md border-gray-300 border-2 cursor-pointer hover:bg-blue-500 hover:text-white">
@@ -58,7 +58,7 @@
             <div><img class="mx-auto" src="assets/purse1.png" alt=""></div>
             <p class="text-center">Pay Bill</p>
         </div>
-        <div class="mx-auto items-center drop-shadow-lg p-2 rounded-md border-gray-300 border-2 cursor-pointer hover:bg-blue-500 hover:text-white">
+        <div id="transaction-box" class="mx-auto items-center drop-shadow-lg py-4 px-1 rounded-md border-gray-300 border-2 cursor-pointer hover:bg-blue-500 hover:text-white">
             <div><img class="mx-auto" src="assets/transaction1.png" alt=""></div>
             <p class="text-center">Transactions</p>
         </div>
@@ -67,12 +67,12 @@
        </section>
        <section class="bg-gray-200 max-w-md min-h-screen  mx-auto mt-10 ">
         <section  id="money-add" class="">
-            <p class="text-3xl font-bold text-black text-stone-600">Add Money</p>
+            <p class="text-3xl font-bold  text-stone-600">Add Money</p>
         <div class="hero bg-base-200 mt-10 ">
             
             <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
               <div class="card-body">
-                <legend>Select a bank</legend>
+                <legend class="cursor-pointer hover:bg-blue-900 hover:text-white">Select a bank</legend>
                 <select class="select">
                     <option disabled selected>Select Bank</option>
                     <option>Bkash</option>
@@ -89,7 +89,7 @@
                             <input id="amount"  type="number" class="input mb-4 rounded-2xl" placeholder="Type your amount" required />
                             <label class="fieldset-label text-slate-950 text-xl mb-4">4 Digit Pin</label>
                             <input id="pin" type="number" class="input mb-8 rounded-2xl" placeholder="Enter 4 Digit Pin" required />
-                            <button id="add-money-btn" class="btn  text-white rounded-2xl bg-sky-700">Add Money</button>
+                            <button id="add-money-btn" class="btn  text-white rounded-2xl bg-sky-700 cursor-pointer hover:bg-rose-900 hover:text-white">Add Money</button>
                           </fieldset>
                         </form>
                       </div>
@@ -118,7 +118,7 @@
                                 <input id="cashout-amount"  type="number" class="input mb-4 rounded-2xl" placeholder="Type your amount" required />
                                 <label class="fieldset-label text-slate-950 text-xl mb-4">4 Digit Pin</label>
                                 <input id="cashout-pin" type="number" class="input mb-8 rounded-2xl" placeholder="Enter 4 Digit Pin" required />
-                                <button id="cashout-btn" class="btn  text-white rounded-2xl bg-sky-700">Cashout</button>
+                                <button id="cashout-btn" class="btn  text-white rounded-2xl bg-sky-700 cursor-pointer hover:bg-rose-900 hover:text-white">Cashout</button>
                               </fieldset>
                             </form>
                           </div>
@@ -129,6 +129,10 @@
               </div>
             </div>
         </section>
+        <section id="transaction-container" class="bg-red-300 border-2 border-slate-500 drop-shadow-md p-4 cursor-pointer hover:bg-neutral-200">
+          <h1 class="text-2xl text-cyan-900 font-bold">Transaction History</h1>
+          
+        </section>
        </section>
        
         
@@ -137,5 +141,6 @@
     <script src="script/add-money.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/transaction.js"></script>
 </body>
 </html>
