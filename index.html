@@ -7,7 +7,35 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-slate-700">
+    <section class="bg-gray-200 max-w-md min-h-screen px-16 mx-auto">
+        <header class="">
+           <div class="relative flex flex-col items-center pt-24">
+             <div class=""><img class="" src="/assets/bg.png" alt=""></div>
+             <div class="absolute mt-10 "><img src="assets/Group.png" alt=""></div>
+             <p class="text-3xl text-sky-700 mb-10">PAYOO MOBILE BANKING</p>
+             <!-- login part -->
+             <div class="w-full mb-16 rounded-3xl">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <fieldset class="fieldset ">
+                        <label class="fieldset-label text-slate-950 text-xl mb-4">Mobile Number</label>
+                        <input value="" id="account-number"  type="number" class="input mb-4 rounded-2xl" placeholder="Enter your number" required />
+                        <label class="fieldset-label text-slate-950 text-xl mb-4">4 Digit Pin</label>
+                        <input value="" id="pin" type="number" class="input mb-8 rounded-2xl" placeholder="Enter 4 Digit Pin" required />
+                        <button id="login-btn" class="btn btn-neutralmt-4 rounded-2xl text-white bg-sky-700">Login</button>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+           </div>
+           
+           
+        </header>
+        
+        
+          
+    </section>
+    <script src="./script/login.js"></script>
 </body>
 </html>
